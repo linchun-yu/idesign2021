@@ -1,0 +1,26 @@
+<html >
+    <title>Writing to Same Doc</title>
+
+    <script language="JavaScript">
+    //重新寫入函式
+    function RepeatWrite(){
+        // 儲存寫入的內容
+        var newContent = "<html><head><title>A New Doc</title></head>"
+        newContent += "<body bgcolor='aqua'><h1>This document is new.</h1>"
+        newContent += "Click F5 to see original document."
+        newContent += "</body></html>"
+        // 寫入新的內容
+        document.write(newContent);
+        document.close();
+    }
+    
+    </script>
+    </head>
+    <body>
+    <form>
+  	<!--單擊按鈕呼叫寫入函式-->
+    <input type="button" value="Replace Content" onClick="RepeatWrite()">
+    </form>
+    </body>
+</html>
+
